@@ -1,3 +1,4 @@
+@import '../../variables.css';
 #intro {
     height: calc(100vh - 5rem);
     width: 100vw;
@@ -34,7 +35,7 @@
 }
 
 .introName {
-    color: yellow;
+    color: var(--secondary-color);
 }
 
 .introPara {
@@ -44,7 +45,7 @@
 }
 
 .btn {
-    background: white;
+    background: var(--text-color);
     margin: 1rem 0;
     padding: 0.75rem 1.5rem;
     border: none;

@@ -1,5 +1,6 @@
+@import '../../variables.css';
 .navbar {
-    background: rgb(30, 30, 30);
+    background: var(--primary-color);
     height: 5rem;
     width: 100vw;
     max-width: 80rem;
@@ -25,14 +26,14 @@
 }
 
 .desktopMenuListItem:hover {
-    color: yellow;
+    color: var(--secondary-color);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .desktopMenuBtn {
-    background: white;
-    color: black;
+    background: var(--text-color);
+    color: var(--menu-button-color);
     border: none;
     display: flex;
     align-items: center;
@@ -49,9 +50,9 @@
 }
 
 .active {
-    color: yellow;
+    color: var(--secondary-color);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .mobMenu {
@@ -70,15 +71,15 @@
     padding: 0.5rem;
     height: fit-content;
     min-width: 15rem;
-    background: rgb(40, 40, 40);
+    background: var(--light-primary-color);
     border-radius: 1rem;
 }
 
 .listItem {
-    color: white;
+    color: var(--text-color);
     padding: 0.5rem 3rem;
     margin: 0.25rem;
-    background: rgb(30, 30, 30);
+    background: var(--primary-color);
 }
 
 @media screen and (max-width: 720px) {
