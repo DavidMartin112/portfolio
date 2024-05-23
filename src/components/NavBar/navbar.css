@@ -1,5 +1,5 @@
 .navbar {
-    background: rgb(30, 30, 30);
+    background: var(--primary-color);
     height: 5rem;
     width: 100vw;
     max-width: 80rem;
@@ -8,8 +8,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 3;
 }
 
@@ -25,14 +27,14 @@
 }
 
 .desktopMenuListItem:hover {
-    color: yellow;
+    color: var(--secondary-color);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .desktopMenuBtn {
-    background: white;
-    color: black;
+    background: var(--text-color);
+    color: var(--menu-button-color);
     border: none;
     display: flex;
     align-items: center;
@@ -46,12 +48,13 @@
     height: 1rem;
     width: 1rem;
     margin: 1rem;
+    filter: var(--filter);
 }
 
 .active {
-    color: yellow;
+    color: var(--secondary-color);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .mobMenu {
@@ -70,15 +73,24 @@
     padding: 0.5rem;
     height: fit-content;
     min-width: 15rem;
-    background: rgb(40, 40, 40);
+    background: var(--light-primary-color);
     border-radius: 1rem;
 }
 
 .listItem {
-    color: white;
+    color: var(--text-color);
     padding: 0.5rem 3rem;
     margin: 0.25rem;
-    background: rgb(30, 30, 30);
+    background: var(--primary-color);
+}
+
+.themeToggle {
+    background: var(--menu-button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 720px) {

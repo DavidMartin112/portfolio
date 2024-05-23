@@ -1,0 +1,9 @@
+:root {
+    --primary-color: rgb(30, 30, 30);
+    --light-primary-color: rgb(40, 40, 40);
+    --lighter-primary-color: rgb(50, 50, 50);
+    --text-color: white;
+    --secondary-color: yellow;
+    --menu-button-color: black;
+    --filter: none;
+  }

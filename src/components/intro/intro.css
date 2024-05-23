@@ -5,6 +5,8 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    top: 50px;
+    margin-bottom: 50px;
 }
 
 .bg {
@@ -34,7 +36,7 @@
 }
 
 .introName {
-    color: yellow;
+    color: var(--secondary-color);
 }
 
 .introPara {
@@ -44,17 +46,19 @@
 }
 
 .btn {
-    background: white;
+    background: var(--text-color);
     margin: 1rem 0;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 2rem;
+    color: var(--menu-button-color);
 }
 
 .btnImg {
     object-fit: cover;
     margin: 0 0.25rem;
     height: 1rem;
+    filter: var(--filter);
 }
 
 @media screen and (max-width: 840px) {
