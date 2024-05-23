@@ -44,6 +44,7 @@
     border-radius: 2rem;
     background: var(--text-color);
     font-size: 1rem;
+    color: var(--menu-button-color);
 }
 
 @media screen and (max-width: 585px){

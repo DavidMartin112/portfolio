@@ -46,6 +46,7 @@
     height: 1rem;
     width: 1rem;
     margin: 1rem;
+    filter: var(--filter);
 }
 
 .active {
@@ -79,6 +80,15 @@
     padding: 0.5rem 3rem;
     margin: 0.25rem;
     background: var(--primary-color);
+}
+
+.themeToggle {
+    background: var(--menu-button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 720px) {
