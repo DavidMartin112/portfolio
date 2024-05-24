@@ -61,6 +61,30 @@
     filter: var(--filter);
 }
 
+.colorPickerToggle {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.colorPicker {
+    position: absolute;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.editImg {
+    object-fit: cover;
+    margin: 0;
+    height: 2rem;
+    /* filter:  */
+}
+
+.colorPicker > div {
+    position: relative;
+}
+
 @media screen and (max-width: 840px) {
     .bg {
         right: -10vw;
