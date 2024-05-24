@@ -16,6 +16,14 @@ const Intro = () => {
         setSecondaryColor(color.hex);
     };
 
+    // const handleDocumentClick = (event) => {
+    //     if (colorPickerVisible && !event.target.closest('.colorPicker')) {
+    //         setColorPickerVisible(false);
+    //     }
+    // };
+
+    // document.addEventListener('click', handleDocumentClick);
+
     return (
         <section id="intro">
             <div className="introContent">
@@ -39,7 +47,7 @@ const Intro = () => {
             </div>
             <img src={bg} alt='Profile' className='bg'/>
         </section>
-    );
+    )
 };
 
 export default Intro;
