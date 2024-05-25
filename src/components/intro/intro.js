@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { SketchPicker } from 'react-color';
+import { GithubPicker } from 'react-color';
 import './intro.css';
 import bg from '../../assets/image2.png';
 import { Link } from 'react-scroll';
@@ -8,13 +8,11 @@ import { FaSuitcase } from "react-icons/fa6";
 
 const Intro = () => {
     const [colorPickerVisible, setColorPickerVisible] = useState(false);
-    const [secondaryColor, setSecondaryColor] = useState('yellow');
     const colorPickerRef = useRef(null);
 
     const handleColorChange = (color) => {
         const root = document.documentElement;
         root.style.setProperty('--secondary-color', color.hex);
-        setSecondaryColor(color.hex);
     };
 
     const handleClickOutside = (event) => {
@@ -46,9 +44,10 @@ const Intro = () => {
                     </button>
                     {colorPickerVisible && (
                     <div className='colorPicker' ref={colorPickerRef}>
-                        <SketchPicker
-                            color={secondaryColor}
+                        <GithubPicker
+                            colors={['#B80000', '#DB3E00', '#FCCB00', '#008B02', '#006B76', '#1273DE', '#004DCF', '#5300EB', '#EB9694', '#FAD0C3', '#FEF3BD', '#C1E1C5', '#BEDADC', '#C4DEF6', '#BED3F3', '#D4C4FB']}
                             onChangeComplete={handleColorChange}
+                            triangle='hide'
                         />
                     </div>
                     )}
