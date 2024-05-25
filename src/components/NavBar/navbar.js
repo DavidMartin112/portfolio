@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import { FaRegMessage } from "react-icons/fa6";
 import { FaEllipsis  } from "react-icons/fa6";
 import { TbCircleLetterDFilled } from "react-icons/tb";
+import { CgDarkMode } from "react-icons/cg";
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -17,6 +18,7 @@ const Navbar = () => {
             root.style.setProperty('--text-color', 'black');
             root.style.setProperty('--menu-button-color', 'white');
             root.style.setProperty('--filter', 'invert(1)');
+            root.style.setProperty('--body-background', 'linear-gradient(to right, var(--secondary-color) -150%, var(--primary-color) 25%, var(--primary-color) 75%, var(--secondary-color) 250%)');
         } else {
             root.style.setProperty('--primary-color', 'rgb(30, 30, 30)');
             root.style.setProperty('--light-primary-color', 'rgb(40, 40, 40)');
@@ -24,6 +26,7 @@ const Navbar = () => {
             root.style.setProperty('--text-color', 'white');
             root.style.setProperty('--menu-button-color', 'black');
             root.style.setProperty('--filter', 'none');
+            root.style.setProperty('--body-background', 'linear-gradient(to right, var(--secondary-color) -500%, var(--primary-color) 25%, var(--primary-color) 75%, var(--secondary-color) 600%)');
         }
         setIsDarkTheme(!isDarkTheme);
     };
@@ -38,15 +41,17 @@ const Navbar = () => {
                     <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>Portfolio</Link>
                     <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>Clients</Link>
                 </div>
-                <button className='themeToggle' onClick={toggleTheme}>
-                    {isDarkTheme ? 'Light Mode' : 'Dark Mode'}
-                </button>
-                <button className='desktopMenuBtn' onClick={() => {
-                    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
-                }}>
-                    <FaRegMessage className='desktopMenuImg'/>
-                    Contanct Me
-                </button>
+                <div className='desktopMenuRight'>
+                    <CgDarkMode className='themeToggle' onClick={toggleTheme}>
+                        {isDarkTheme ? 'Light Mode' : 'Dark Mode'}
+                    </CgDarkMode>
+                    <button className='desktopMenuBtn' onClick={() => {
+                        document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+                    }}>
+                        <FaRegMessage className='desktopMenuImg'/>
+                        Contanct Me
+                    </button>
+                </div>
                 <FaEllipsis className='mobMenu' onClick={() => setShowMenu(!showMenu)}/>
                 <div className='navMenu' style={{display: showMenu? 'flex':'none'}}>
                     <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Home</Link>

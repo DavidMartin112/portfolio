@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(to right, var(--secondary-color) -100%, var(--primary-color) 50%);
+    background: var(--body-background);
     color: var(--text-color);
     overflow: hidden;
     overflow-y: scroll;

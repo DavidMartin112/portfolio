@@ -5,5 +5,5 @@
     --text-color: white;
     --secondary-color: darkgreen;
     --menu-button-color: black;
-    --filter: none;
+    --body-background: linear-gradient(to right, var(--secondary-color) -500%, var(--primary-color) 25%, var(--primary-color) 75%, var(--secondary-color) 600%);
   }

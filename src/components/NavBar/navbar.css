@@ -1,5 +1,5 @@
 .navbar {
-    background: var(--primary-color);
+    background: linear-gradient(to bottom, var(--primary-color)50%, var(--secondary-color)200%);
     height: 5rem;
     width: 100vw;
     max-width: 100vw;
@@ -13,7 +13,6 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
-    border-bottom: 1px solid var(--secondary-color);
 }
 
 .logo {
@@ -31,6 +30,12 @@
     color: var(--secondary-color);
     padding-bottom: 0.5rem;
     border-bottom: 3px solid var(--secondary-color);
+}
+
+.desktopMenuRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .desktopMenuBtn {
@@ -61,6 +66,7 @@
     display: none;
     height: 5rem;
     width: 5rem;
+    color: var(--secondary-color);
 }
 
 .navMenu {
@@ -85,12 +91,10 @@
 }
 
 .themeToggle {
-    background: var(--menu-button-color);
-    color: var(--text-color);
-    border: none;
-    padding: 5px 10px;
+    color: var(--secondary-color);
+    height: 2.5rem;
+    width: 2.5rem;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 @media screen and (max-width: 720px) {
