@@ -64,6 +64,8 @@
     border: none;
     border-radius: 0.5rem;
     background: var(--light-primary-color);
+    overflow: hidden;
+    max-height: 12rem;
 }
 
 .submit {
@@ -74,6 +76,10 @@
     padding: 0.75rem 3.5rem;
     color: var(--menu-button-color);
     cursor: pointer;
+}
+
+.submit:hover {
+    background: var(--hover-text-color);
 }
 
 .links {

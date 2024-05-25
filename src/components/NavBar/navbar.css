@@ -50,6 +50,10 @@
     cursor: pointer;
 }
 
+.desktopMenuBtn:hover {
+    background: var(--hover-text-color);
+}
+
 .desktopMenuImg {
     height: 1.5rem;
     width: 1.5rem;

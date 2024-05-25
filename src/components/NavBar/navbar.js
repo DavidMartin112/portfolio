@@ -16,6 +16,7 @@ const Navbar = () => {
             root.style.setProperty('--light-primary-color', 'rgb(250, 250, 250)');
             root.style.setProperty('--lighter-primary-color', 'rgb(255, 255, 255)');
             root.style.setProperty('--text-color', 'black');
+            root.style.setProperty('--hover-text-color', 'rgb(50, 50, 50)');
             root.style.setProperty('--menu-button-color', 'white');
             root.style.setProperty('--filter', 'invert(1)');
             root.style.setProperty('--body-background', 'linear-gradient(to right, var(--secondary-color) -150%, var(--primary-color) 25%, var(--primary-color) 75%, var(--secondary-color) 250%)');
@@ -24,6 +25,7 @@ const Navbar = () => {
             root.style.setProperty('--light-primary-color', 'rgb(40, 40, 40)');
             root.style.setProperty('--lighter-primary-color', 'rgb(50, 50, 50)');
             root.style.setProperty('--text-color', 'white');
+            root.style.setProperty('--hover-text-color', 'rgb(200, 200, 200)');
             root.style.setProperty('--menu-button-color', 'black');
             root.style.setProperty('--filter', 'none');
             root.style.setProperty('--body-background', 'linear-gradient(to right, var(--secondary-color) -500%, var(--primary-color) 25%, var(--primary-color) 75%, var(--secondary-color) 600%)');

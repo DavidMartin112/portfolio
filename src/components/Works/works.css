@@ -49,6 +49,10 @@
     cursor: pointer;
 }
 
+.worksBtn:hover {
+    background: var(--hover-text-color);
+}
+
 @media screen and (max-width: 585px){
     .worksImg {
         height: 48vw;
