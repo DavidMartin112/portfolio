@@ -14,7 +14,10 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-    
+        if (!form.current.from_name.value || !form.current.from_email.value || !form.current.message.value) {
+            alert('Please fill out all fields');
+            return;
+        }
         emailjs.sendForm('service_oh0ecnn', 'template_zi7ocgk', form.current, { publicKey: 'kiXPMMkJVI7RzuUQ2',})
             .then(
             () => {
