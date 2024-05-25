@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './navbar.css'
 import { Link } from 'react-scroll';
 import { FaRegMessage } from "react-icons/fa6";
@@ -9,6 +9,8 @@ import { CgDarkMode } from "react-icons/cg";
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [isDarkTheme, setIsDarkTheme] = useState(true);
+    const mobMenuRef = useRef(null);
+
     const toggleTheme = () => {
         const root = document.documentElement;
         if (isDarkTheme) {
@@ -33,6 +35,24 @@ const Navbar = () => {
         setIsDarkTheme(!isDarkTheme);
     };
 
+    const handleClickOutside = (event) => {
+        if (mobMenuRef.current && !mobMenuRef.current.contains(event.target) &&
+            !event.target.closest('.mobMenu')) {
+                setShowMenu(false);
+        }
+    };
+
+    useEffect(() => {
+        if (showMenu) {
+            document.addEventListener('click', handleClickOutside);
+        } else {
+            document.removeEventListener('click', handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [showMenu]);
+
     return (
         <div>
             <nav className='navbar'>
@@ -55,7 +75,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 <FaEllipsis className='mobMenu' onClick={() => setShowMenu(!showMenu)}/>
-                <div className='navMenu' style={{display: showMenu? 'flex':'none'}}>
+                <div className='navMenu' style={{display: showMenu? 'flex':'none'}} ref={mobMenuRef}>
                     <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Home</Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>About</Link>
                     <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Portfolio</Link>

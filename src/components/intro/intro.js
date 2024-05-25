@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { SketchPicker } from 'react-color';
 import './intro.css';
 import bg from '../../assets/image2.png';
@@ -9,6 +9,7 @@ import { FaSuitcase } from "react-icons/fa6";
 const Intro = () => {
     const [colorPickerVisible, setColorPickerVisible] = useState(false);
     const [secondaryColor, setSecondaryColor] = useState('yellow');
+    const colorPickerRef = useRef(null);
 
     const handleColorChange = (color) => {
         const root = document.documentElement;
@@ -16,13 +17,23 @@ const Intro = () => {
         setSecondaryColor(color.hex);
     };
 
-    // const handleDocumentClick = (event) => {
-    //     if (colorPickerVisible && !event.target.closest('.colorPicker')) {
-    //         setColorPickerVisible(false);
-    //     }
-    // };
+    const handleClickOutside = (event) => {
+        if (colorPickerRef.current && !colorPickerRef.current.contains(event.target) &&
+            !event.target.closest('.colorPickerToggle')) {
+            setColorPickerVisible(false);
+        }
+    };
 
-    // document.addEventListener('click', handleDocumentClick);
+    useEffect(() => {
+        if (colorPickerVisible) {
+            document.addEventListener('click', handleClickOutside);
+        } else {
+            document.removeEventListener('click', handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [colorPickerVisible]);
 
     return (
         <section id="intro">
@@ -34,7 +45,7 @@ const Intro = () => {
                         <FaPenToSquare className='editImg'/>
                     </button>
                     {colorPickerVisible && (
-                    <div className='colorPicker'>
+                    <div className='colorPicker' ref={colorPickerRef}>
                         <SketchPicker
                             color={secondaryColor}
                             onChangeComplete={handleColorChange}
