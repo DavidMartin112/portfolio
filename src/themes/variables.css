@@ -4,7 +4,7 @@
     --lighter-primary-color: rgb(50, 50, 50);
     --text-color: white;
     --hover-text-color: rgb(200, 200, 200);
-    --secondary-color: darkgreen;
+    --secondary-color: rgb(74, 144, 226);
     --menu-button-color: black;
     --body-background: linear-gradient(to right, var(--secondary-color) -500%, var(--primary-color) 25%, var(--primary-color) 75%, var(--secondary-color) 600%);
   }
