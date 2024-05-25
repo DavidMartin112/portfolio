@@ -15,16 +15,16 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_oh0ecnn', 'template_zi7ocgk', form.current, { publicKey: '96Yvn-dFwBp2ClZ_cM0DC',})
+        emailjs.sendForm('service_oh0ecnn', 'template_zi7ocgk', form.current, { publicKey: 'kiXPMMkJVI7RzuUQ2',})
             .then(
             () => {
-                console.log('SUCCESS!');
                 alert('Your message has been sent successfully. I will get back to you soon.');
             },
             (error) => {
-                console.log('FAILED...', error.text);
+                alert('Not able to send email...', error.text);
             },
             );
+        form.current.reset();
         };
     return (
         <section id='contactPage'>
@@ -48,7 +48,7 @@ const Contact = () => {
                     <input type='text' className='name' placeholder='Your Name' name='from_name'/>
                     <input type='email' className='email' placeholder='Your Email' name='from_email'/>
                     <textarea className='msg' name='message' rows='5' placeholder='Your Message'></textarea>
-                    <button type='submit' className='submit' value='Send' onClick={() => alert('Laura te quiero')}>Submit</button>
+                    <button type='submit' className='submit' value='Send'>Submit</button>
                     <div className='links'>
                         <img src={FacebookIcon} alt='Facebook' className='link'></img>
                         <img src={TwitterIcon} alt='Twitter' className='link'></img>
