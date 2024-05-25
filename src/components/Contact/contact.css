@@ -73,6 +73,7 @@
     margin: 2rem;
     padding: 0.75rem 3.5rem;
     color: var(--menu-button-color);
+    cursor: pointer;
 }
 
 .links {
@@ -85,4 +86,5 @@
     height: 3rem;
     width: 3rem;
     margin: 0 0.75rem;
+    cursor: pointer;
 }

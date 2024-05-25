@@ -52,6 +52,7 @@
     border: none;
     border-radius: 2rem;
     color: var(--menu-button-color);
+    cursor: pointer;
 }
 
 .btnImg {
