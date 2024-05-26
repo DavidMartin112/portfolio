@@ -3,6 +3,7 @@ import { GithubPicker } from 'react-color';
 import './intro.css';
 import bg from '../../assets/image2.png';
 import { Link } from 'react-scroll';
+import Downloader from '../Downloader/downloader';
 import { FaPenToSquare } from "react-icons/fa6";
 import { FaSuitcase } from "react-icons/fa6";
 
@@ -53,7 +54,7 @@ const Intro = () => {
                     )}
                     </span> <br />Software Developer</span>
                 <p className='introPara'>I am a skilled software developer with experience creating <br /> visually appealing and user friendly websites.</p>
-                <Link><button className='btn'><FaSuitcase  className='btnImg'/>Hire Me</button></Link>   
+                <Link><Downloader/></Link>
             </div>
             <img src={bg} alt='Profile' className='bg'/>
         </section>
