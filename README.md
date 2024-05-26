@@ -32,12 +32,12 @@ You can view the live version of the portfolio website here: [Live Demo](https:/
 
 ## Screenshots
 
-![Home Page](/home.png)
+![Home Page](/images//home.png)
 *Home Page*
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin:0 auto;">
-  <img src="/web3.png" alt="Responsive Page" style="max-width: 45%; height: auto;">
-  <img src="/web2.png" alt="Responsive Page 2" style="max-width: 45%; height: auto;">
+  <img src="/images/web3.png" alt="Responsive Page" style="max-width: 45%; height: auto;">
+  <img src="/images/web2.png" alt="Responsive Page 2" style="max-width: 45%; height: auto;">
 </div>
 
 ## Installation
