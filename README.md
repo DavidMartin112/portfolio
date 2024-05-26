@@ -5,6 +5,7 @@ Welcome to my React Web App Portfolio repository! This project showcases my skil
 ## Table of Contents
 
 - [About](#about)
+- [Demo](#demo)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
@@ -16,6 +17,10 @@ Welcome to my React Web App Portfolio repository! This project showcases my skil
 ## About
 
 This is a personal portfolio website built with React.js. It displays information about my projects, skills, and experience. The goal of this project is to provide a platform to showcase my work to potential employers and clients.
+
+## Demo
+
+You can view the live version of the portfolio website here: [Live Demo](https://davidmartin112.github.io/portfolio/)
 
 ## Features
 
