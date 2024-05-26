@@ -30,10 +30,10 @@ This is a personal portfolio website built with React.js. It displays informatio
 ![Home Page](/home.png)
 *Home Page*
 
-![Responsive Page](/web.png)
-*Projects Page*
-![Responsive Page 2](/web2.png)
-*Projects Page*
+<div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin:0 auto;">
+  <img src="/web3.png" alt="Responsive Page" style="max-width: 45%; height: auto;">
+  <img src="/web2.png" alt="Responsive Page 2" style="max-width: 45%; height: auto;">
+</div>
 
 ## Installation
 
