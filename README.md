@@ -27,10 +27,10 @@ This is a personal portfolio website built with React.js. It displays informatio
 
 ## Screenshots
 
-![Home Page](screenshots/homepage.png)
+![Home Page](/home.png)
 *Home Page*
 
-![Projects Page](screenshots/projects.png)
+![Projects Page](/web.png)
 *Projects Page*
 
 ## Installation
