@@ -1,9 +1,7 @@
 import React, { useRef } from 'react';
 import './contact.css';
-import Walmart from '../../assets/walmart.png';
-import Microsoft from '../../assets/microsoft.png';
-import Facebook from '../../assets/facebook.png';
-import Adobe from '../../assets/adobe.png';
+import Zucchetti from '../../assets/zucchetti.png';
+import EHU from '../../assets/Ehu_logo.png';
 import FacebookIcon from '../../assets/facebook-icon.png';
 import YoutubeIcon from '../../assets/youtube.png';
 import InstagramIcon from '../../assets/instagram.png';
@@ -34,16 +32,14 @@ const Contact = () => {
     return (
         <section id='contactPage'>
             <div id='clients'>
-                <h1 className='contactPageTitle'>{t('my_clients')}</h1>
+                <h1 className='contactPageTitle'>{t('my_cronology')}</h1>
                 <p className='clientDesc'>
-                    {t('description_clients')}
-                    {t('description_clients2')}
+                    {t('description_cronology')}<br/>
+                    {t('description_cronology2')}
                 </p>
                 <div className='clientsImgs'>
-                    <img src={Walmart} alt='Client' className='clientsImg'></img>
-                    <img src={Adobe} alt='Client' className='clientsImg'></img>
-                    <img src={Microsoft} alt='Client' className='clientsImg'></img>
-                    <img src={Facebook} alt='Client' className='clientsImg'></img>
+                    <img src={EHU} alt='Client' className='clientsImg'></img>
+                    <img src={Zucchetti} alt='Client' className='clientsImg'></img>
                 </div>
             </div>
             <div id='contact'>

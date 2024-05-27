@@ -32,6 +32,7 @@
     min-width: 9rem;
     margin: auto;
     padding: 0.25rem;
+    border: var(--text-color) 1px solid;
 }
 
 #clients {
