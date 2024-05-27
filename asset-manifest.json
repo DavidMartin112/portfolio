@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cf5226ab.css",
-    "main.js": "/portfolio/static/js/main.3865bd25.js",
+    "main.css": "/portfolio/static/css/main.72ba7321.css",
+    "main.js": "/portfolio/static/js/main.6abb0a3b.js",
     "static/media/portfolio-6.png": "/portfolio/static/media/portfolio-6.4a10fac7d271e87859e9.png",
     "static/media/portfolio-2.png": "/portfolio/static/media/portfolio-2.33d06b368b4e6395030e.png",
     "static/media/image2.png": "/portfolio/static/media/image2.00ceae3a1d748671f562.png",
@@ -9,18 +9,16 @@
     "static/media/portfolio-1.png": "/portfolio/static/media/portfolio-1.b33adf772d54ab33e953.png",
     "static/media/portfolio-5.png": "/portfolio/static/media/portfolio-5.bf754db8618dd60ec6f1.png",
     "static/media/portfolio-3.png": "/portfolio/static/media/portfolio-3.ca4192894d93b08ad3b5.png",
-    "static/media/facebook.png": "/portfolio/static/media/facebook.81dd033a37c4860f7121.png",
-    "static/media/adobe.png": "/portfolio/static/media/adobe.a08b8360ff7b700ed0c4.png",
-    "static/media/walmart.png": "/portfolio/static/media/walmart.1d2b5e5c5c5a8e2bd5ce.png",
+    "static/media/Ehu_logo.png": "/portfolio/static/media/Ehu_logo.a53b2ea505d315904472.png",
     "static/media/ui-design.png": "/portfolio/static/media/ui-design.c4acd455fc2040eddcc8.png",
     "static/media/instagram.png": "/portfolio/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.cf5226ab.css.map": "/portfolio/static/css/main.cf5226ab.css.map",
-    "main.3865bd25.js.map": "/portfolio/static/js/main.3865bd25.js.map"
+    "main.72ba7321.css.map": "/portfolio/static/css/main.72ba7321.css.map",
+    "main.6abb0a3b.js.map": "/portfolio/static/js/main.6abb0a3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf5226ab.css",
-    "static/js/main.3865bd25.js"
+    "static/css/main.72ba7321.css",
+    "static/js/main.6abb0a3b.js"
   ]
 }
