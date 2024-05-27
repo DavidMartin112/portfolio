@@ -9,7 +9,7 @@ i18n
   .use(Backend)
   .init({
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     resources: {
       en: {
         translation: {
