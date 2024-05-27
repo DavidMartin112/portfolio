@@ -1,10 +1,11 @@
 :root {
-    --primary-color: rgb(30, 30, 30);
-    --light-primary-color: rgb(40, 40, 40);
-    --lighter-primary-color: rgb(50, 50, 50);
-    --text-color: white;
-    --hover-text-color: rgb(200, 200, 200);
+    --primary-color: rgb(240, 240, 240);
+    --light-primary-color: rgb(250, 250, 250);
+    --lighter-primary-color: rgb(255, 255, 255);
+    --text-color: black;
+    --hover-text-color: rgb(50, 50, 50);
     --secondary-color: #006B76;
-    --menu-button-color: black;
-    --body-background: linear-gradient(to right, var(--secondary-color) -500%, var(--primary-color) 25%, var(--primary-color) 75%, var(--secondary-color) 600%);
+    --menu-button-color: white;
+    --filter: invert(1);
+    --body-background: linear-gradient(to right, var(--secondary-color) -150%, var(--primary-color) 25%, var(--primary-color) 75%, var(--secondary-color) 250%);
   }

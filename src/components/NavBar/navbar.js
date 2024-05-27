@@ -11,7 +11,7 @@ import LanguageSelector from '../LanguageSelector/languageSelector';
 const Navbar = () => {
     const { t } = useTranslation();
     const [showMenu, setShowMenu] = useState(false);
-    const [isDarkTheme, setIsDarkTheme] = useState(true);
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
     const mobMenuRef = useRef(null);
 
     const toggleTheme = () => {

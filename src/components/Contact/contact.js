@@ -32,10 +32,10 @@ const Contact = () => {
     return (
         <section id='contactPage'>
             <div id='clients'>
-                <h1 className='contactPageTitle'>{t('my_cronology')}</h1>
+                <h1 className='contactPageTitle'>{t('my_chronology')}</h1>
                 <p className='clientDesc'>
-                    {t('description_cronology')}<br/>
-                    {t('description_cronology2')}
+                    {t('description_chronology')}<br/>
+                    {t('description_chronology2')}
                 </p>
                 <div className='clientsImgs'>
                     <img src={EHU} alt='Client' className='clientsImg'></img>
