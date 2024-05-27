@@ -3,8 +3,11 @@ import './skills.css';
 import UIDesing from '../../assets/ui-design.png';
 import WebDesign from '../../assets/website-design.png';
 import AppDesign from '../../assets/app-design.png';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+    const { t } = useTranslation();
+
     return (
         <section id='skills'>
             <span className='skillTitle'>What I do</span>

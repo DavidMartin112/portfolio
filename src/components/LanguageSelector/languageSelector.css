@@ -1,0 +1,32 @@
+.language-selector-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .language-selector-container select {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .language-selector-container select:hover {
+    border-color: var(--lighter-primary-color);
+  }
+  
+  .language-selector-container select:focus {
+    border-color: var(--lighter-primary-color);
+    box-shadow: 0 0 5px var(--lighter-primary-color);
+  }
+
+  .language-selector-container select option {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 2rem;
+  }
+  

@@ -9,8 +9,10 @@ import YoutubeIcon from '../../assets/youtube.png';
 import InstagramIcon from '../../assets/instagram.png';
 import TwitterIcon from '../../assets/twitter.png';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation();
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();

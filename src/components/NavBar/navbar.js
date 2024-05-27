@@ -5,8 +5,11 @@ import { FaRegMessage } from "react-icons/fa6";
 import { FaEllipsis  } from "react-icons/fa6";
 import { TbCircleLetterDFilled } from "react-icons/tb";
 import { CgDarkMode } from "react-icons/cg";
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from '../LanguageSelector/languageSelector';
 
 const Navbar = () => {
+    const { t } = useTranslation();
     const [showMenu, setShowMenu] = useState(false);
     const [isDarkTheme, setIsDarkTheme] = useState(true);
     const mobMenuRef = useRef(null);
@@ -58,12 +61,13 @@ const Navbar = () => {
             <nav className='navbar'>
                 <TbCircleLetterDFilled className='logo'/>
                 <div className='desktopMenu'>
-                    <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
-                    <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>About</Link>
-                    <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>Portfolio</Link>
-                    <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>Clients</Link>
+                    <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>{t('home')}</Link>
+                    <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>{t('about')}</Link>
+                    <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>{t('portfolio')}</Link>
+                    <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>{t('clients')}</Link>
                 </div>
                 <div className='desktopMenuRight'>
+                    <LanguageSelector/>
                     <CgDarkMode className='themeToggle' onClick={toggleTheme}>
                         {isDarkTheme ? 'Light Mode' : 'Dark Mode'}
                     </CgDarkMode>
@@ -71,16 +75,16 @@ const Navbar = () => {
                         document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
                     }}>
                         <FaRegMessage className='desktopMenuImg'/>
-                        Contanct Me
+                        {t('contact_me')}
                     </button>
                 </div>
                 <FaEllipsis className='mobMenu' onClick={() => setShowMenu(!showMenu)}/>
                 <div className='navMenu' style={{display: showMenu? 'flex':'none'}} ref={mobMenuRef}>
-                    <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Home</Link>
-                    <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>About</Link>
-                    <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Portfolio</Link>
-                    <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Clients</Link>
-                    <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Contanct</Link>
+                    <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>{t('home')}</Link>
+                    <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>{t('about')}</Link>
+                    <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>{t('portfolio')}</Link>
+                    <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>{t('clients')}</Link>
+                    <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>{t('contact')}</Link>
                 </div>
             </nav>
         </div>

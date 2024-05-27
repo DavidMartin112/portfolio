@@ -5,9 +5,10 @@ import bg from '../../assets/image2.png';
 import { Link } from 'react-scroll';
 import Downloader from '../Downloader/downloader';
 import { FaPenToSquare } from "react-icons/fa6";
-import { FaSuitcase } from "react-icons/fa6";
+import { useTranslation } from 'react-i18next';
 
 const Intro = () => {
+    const { t } = useTranslation();
     const [colorPickerVisible, setColorPickerVisible] = useState(false);
     const colorPickerRef = useRef(null);
 
