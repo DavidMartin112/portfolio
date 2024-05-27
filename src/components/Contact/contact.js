@@ -34,7 +34,7 @@ const Contact = () => {
     return (
         <section id='contactPage'>
             <div id='clients'>
-                <h1 className='contactPageTitle'>{t('my')} {t('clients')}</h1>
+                <h1 className='contactPageTitle'>{t('my_clients')}</h1>
                 <p className='clientDesc'>
                     {t('description_clients')}
                     {t('description_clients2')}
