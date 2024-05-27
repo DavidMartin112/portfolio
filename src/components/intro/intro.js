@@ -38,8 +38,8 @@ const Intro = () => {
     return (
         <section id="intro">
             <div className="introContent">
-                <span className='hello'>Hello,</span>
-                <span className='introText'>I'm <span className='introName'>
+                <span className='hello'>{t('hello')},</span>
+                <span className='introText'>{t('I\'m')} <span className='introName'>
                     David 
                     <button className='colorPickerToggle' onClick={() => setColorPickerVisible(!colorPickerVisible)}>
                         <FaPenToSquare className='editImg'/>
@@ -53,8 +53,8 @@ const Intro = () => {
                         />
                     </div>
                     )}
-                    </span> <br />Software Developer</span>
-                <p className='introPara'>I am a skilled software developer with experience creating <br /> visually appealing and user friendly websites.</p>
+                    </span> <br />{t('software_developer')}</span>
+                <p className='introPara'>{t('description_intro')}<br/>{t('description_intro2')}</p>
                 <Link><Downloader/></Link>
             </div>
             <img src={bg} alt='Profile' className='bg'/>

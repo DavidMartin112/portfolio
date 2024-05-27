@@ -10,28 +10,28 @@ const Skills = () => {
 
     return (
         <section id='skills'>
-            <span className='skillTitle'>What I do</span>
-            <span className='skillDesc'>I am a skilled and passionate web designer with experience in creating visually appealing and user-friendly websites. I have a strong understanding of design and keen eye for detail. I am proficient in HTML, CSS, and JavaScript, as well as design software such as Adobe Photoshop and Illustrator</span>
+            <span className='skillTitle'>{t('what_i_do')}</span>
+            <span className='skillDesc'>{t('skills_desc')}</span>
             <div className='skillBars'>
                 <div className='skillBar'>
                     <img src={UIDesing} alt='UIDesign' className='skillBarImg'/>
                     <div className='skillBarText'>
-                        <h2>UI/UX Design</h2>
-                        <p>This is a demo text, you can write your own content here</p>
+                        <h2>{t('skill1')}</h2>
+                        <p>{t('skill1_desc')}</p>
                     </div>
                 </div>
                 <div className='skillBar'>
                     <img src={WebDesign} alt='WebDesign' className='skillBarImg'/>
                     <div className='skillBarText'>
-                        <h2>Website Design</h2>
-                        <p>This is a demo text, you can write your own content here</p>
+                        <h2>{t('skill2')}</h2>
+                        <p>{t('skill2_desc')}</p>
                     </div>
                 </div>
                 <div className='skillBar'>
                     <img src={AppDesign} alt='AppDesign' className='skillBarImg'/>
                     <div className='skillBarText'>
-                        <h2>App Design</h2>
-                        <p>This is a demo text, you can write your own content here</p>
+                        <h2>{t('skill3')}</h2>
+                        <p>{t('skill3_desc')}</p>
                     </div>
                 </div>
             </div>

@@ -18,7 +18,7 @@ const Downloader = () => {
 
   return (
     <button className='btn' onClick={handleDownload}>
-        <FaSuitcase  className='btnImg'/>Hire Me
+        <FaSuitcase  className='btnImg'/>{t('download_cv')}
     </button>
   );
 };

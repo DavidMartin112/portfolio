@@ -34,10 +34,10 @@ const Contact = () => {
     return (
         <section id='contactPage'>
             <div id='clients'>
-                <h1 className='contactPageTitle'>My Clients</h1>
+                <h1 className='contactPageTitle'>{t('my')} {t('clients')}</h1>
                 <p className='clientDesc'>
-                    I have had the opportunity to work with a diverse group of companies.
-                    Some of the notable companies I have worked with includes
+                    {t('description_clients')}
+                    {t('description_clients2')}
                 </p>
                 <div className='clientsImgs'>
                     <img src={Walmart} alt='Client' className='clientsImg'></img>
@@ -47,13 +47,13 @@ const Contact = () => {
                 </div>
             </div>
             <div id='contact'>
-                <h1 className='contactPageTitle'>Contact Me</h1>
-                <span className='contactDesc'>Please fill out the form below to discuss any work opportunities.</span>
+                <h1 className='contactPageTitle'>{t('contact_me')}</h1>
+                <span className='contactDesc'>{t('form_request')}</span>
                 <form className='contactForm' ref={form} onSubmit={sendEmail}>
-                    <input type='text' className='name' placeholder='Your Name' name='from_name'/>
-                    <input type='email' className='email' placeholder='Your Email' name='from_email'/>
-                    <textarea className='msg' name='message' rows='5' placeholder='Your Message'></textarea>
-                    <button type='submit' className='submit' value='Send'>Submit</button>
+                    <input type='text' className='name' placeholder={t('your_name')} name='from_name'/>
+                    <input type='email' className='email' placeholder={t('your_email')} name='from_email'/>
+                    <textarea className='msg' name='message' rows='5' placeholder={t('your_message')}></textarea>
+                    <button type='submit' className='submit' value='Send'>{t('submit')}</button>
                     <div className='links'>
                         <img src={FacebookIcon} alt='Facebook' className='link'></img>
                         <img src={TwitterIcon} alt='Twitter' className='link'></img>

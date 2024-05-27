@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <footer id='footer'>
-            This work is dedicated to the public domain by David Martin. No rights reserved.
+            {t('footer_desc')}
         </footer>
     );
 };
