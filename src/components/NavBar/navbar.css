@@ -32,7 +32,7 @@
     border-bottom: 3px solid var(--secondary-color);
 }
 
-.desktopMenuRight {
+.desktopMenuRight, .desktopMenuLeft {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +46,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
+    margin: 0 0.5rem;
     border-radius: 2rem;
     cursor: pointer;
 }
@@ -101,9 +102,13 @@
     height: 2.5rem;
     width: 2.5rem;
     cursor: pointer;
+    margin: 0 1rem;
 }
 
 @media screen and (max-width: 720px) {
+    .navbar {
+        justify-content: space-between;
+    }
     .mobMenu {
         display: flex;
     }
@@ -114,5 +119,13 @@
 
     .desktopMenuBtn {
         display: none;
+    }
+
+    .themeToggle {
+        display: none;
+    }
+
+    .desktopMenuRight .themeToggle {
+        display: block !important;
     }
 }

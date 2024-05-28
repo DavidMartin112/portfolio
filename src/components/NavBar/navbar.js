@@ -59,7 +59,12 @@ const Navbar = () => {
     return (
         <div>
             <nav className='navbar'>
-                <TbCircleLetterDFilled className='logo'/>
+                <div className='desktopMenuLeft'>
+                    <TbCircleLetterDFilled className='logo'/>
+                    <CgDarkMode className='themeToggle' onClick={toggleTheme}>
+                        {isDarkTheme ? 'Light Mode' : 'Dark Mode'}
+                    </CgDarkMode>
+                </div>
                 <div className='desktopMenu'>
                     <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>{t('home')}</Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>{t('about')}</Link>
@@ -67,8 +72,7 @@ const Navbar = () => {
                     <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>{t('clients')}</Link>
                 </div>
                 <div className='desktopMenuRight'>
-                    <LanguageSelector/>
-                    <CgDarkMode className='themeToggle' onClick={toggleTheme}>
+                    <CgDarkMode className='themeToggle' onClick={toggleTheme} style={{display: 'none'}}>
                         {isDarkTheme ? 'Light Mode' : 'Dark Mode'}
                     </CgDarkMode>
                     <button className='desktopMenuBtn' onClick={() => {
@@ -77,6 +81,7 @@ const Navbar = () => {
                         <FaRegMessage className='desktopMenuImg'/>
                         {t('contact_me')}
                     </button>
+                    <LanguageSelector/>
                 </div>
                 <FaEllipsis className='mobMenu' onClick={() => setShowMenu(!showMenu)}/>
                 <div className='navMenu' style={{display: showMenu? 'flex':'none'}} ref={mobMenuRef}>

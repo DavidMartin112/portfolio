@@ -1,32 +1,70 @@
 .language-selector-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .language-selector-container select {
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-    border: 2px solid var(--secondary-color);
-    border-radius: 2rem;
-    background: transparent;
-    color: var(--secondary-color);
-    cursor: pointer;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  
-  .language-selector-container select:hover {
-    border-color: var(--lighter-primary-color);
-  }
-  
-  .language-selector-container select:focus {
-    border-color: var(--lighter-primary-color);
-    box-shadow: 0 0 5px var(--lighter-primary-color);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .language-selector-container select option {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 2rem;
+.dropbtn {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  border-color: var(--lighter-primary-color);
+  box-shadow: 0 0 5px var(--lighter-primary-color);
+}
+
+.dropbtn img {
+  object-fit: cover;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.dropdown-content {
+  display: absolute;
+  position: absolute;
+  right: 2rem;
+  top: 3.25rem;
+  background-color: var(--primary-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 1.75rem;
+  overflow: hidden;
+}
+
+.dropdown-content div {
+  color: var(--text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-content div:hover {
+  background-color: var(--lighter-primary-color);
+}
+
+.dropdown-content img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .dropdown-content {
+    right: 30vw;
+    top: 3.25rem;
   }
-  
+}
