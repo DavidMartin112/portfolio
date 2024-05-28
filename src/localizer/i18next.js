@@ -44,7 +44,10 @@ i18n
           "skill3": "App Design",
           "skill1_desc": "Designing user interfaces and user experience",
           "skill2_desc": "Designing visually appealing and user-friendly websites",
-          "skill3_desc": "Designing mobile and desktop applications"
+          "skill3_desc": "Designing mobile and desktop applications",
+          "error_empty_fields": "Please fill out all fields",
+          "success_email": "Your message has been sent successfully. I will get back to you soon.",
+          "error_send_email": "Not able to send email... Try again later!"
       }
       },
       es: {
@@ -80,7 +83,10 @@ i18n
           "skill3": "Diseño de Aplicaciones",
           "skill1_desc": "Diseño de interfaces de usuario y experiencia de usuario",
           "skill2_desc": "Diseño de sitios web visualmente atractivos y fáciles de usar",
-          "skill3_desc": "Diseño de aplicaciones móviles y de escritorio"
+          "skill3_desc": "Diseño de aplicaciones móviles y de escritorio",
+          "error_empty_fields": "Por favor complete todos los campos",
+          "success_email": "Su mensaje ha sido enviado con éxito. Me pondré en contacto contigo pronto.",
+          "error_send_email": "No se puede enviar el correo electrónico... ¡Inténtalo de nuevo más tarde!"
         }
       }
     }

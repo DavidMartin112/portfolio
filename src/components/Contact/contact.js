@@ -15,16 +15,16 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         if (!form.current.from_name.value || !form.current.from_email.value || !form.current.message.value) {
-            alert('Please fill out all fields');
+            alert(t('error_empty_fields'));
             return;
         }
         emailjs.sendForm('service_oh0ecnn', 'template_zi7ocgk', form.current, { publicKey: 'kiXPMMkJVI7RzuUQ2',})
             .then(
             () => {
-                alert('Your message has been sent successfully. I will get back to you soon.');
+                alert(t('success_email'));
             },
             (error) => {
-                alert('Not able to send email...', error.text);
+                alert(t('error_send_email'), error.text);
             },
             );
         form.current.reset();
