@@ -1,0 +1,66 @@
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 2rem auto;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: var(--secondary-color) 5px solid;
+    border-radius: 5rem;
+    padding: 1rem;
+    min-width: 365px;
+    min-height: 180px;
+}
+
+.step:hover {
+    background: var(--lighter-primary-color);
+    cursor: pointer;
+}
+
+.step .year {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.step .clientsImg {
+    object-fit: cover;
+    width: 10rem;
+    height: auto;
+    margin: 2rem;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.line hr {
+    width: 200px;
+    border: none;
+    border-top: var(--secondary-color) 10px solid;
+    margin: 0px;
+}
+
+.line .duration {
+    position: absolute;
+    top: 50px;
+    font-size: 0.9em;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    padding: 0 5px;
+    border-radius: 0.5rem;
+}
+
+.line .duration:first-child {
+    left: -210px; /* Adjust based on your design */
+}
+
+.line .duration:last-child {
+    right: -210px; /* Adjust based on your design */
+}

@@ -20,21 +20,6 @@
     font-size: 1rem;
 }
 
-.clientsImgs {
-    margin: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.clientsImg {
-    object-fit: cover;
-    width: 23%;
-    min-width: 9rem;
-    margin: auto;
-    padding: 0.25rem;
-    border: var(--text-color) 1px solid;
-}
-
 #clients {
     padding: 2rem;
 }

@@ -1,13 +1,12 @@
 import React, { useRef } from 'react';
 import './contact.css';
-import Zucchetti from '../../assets/zucchetti.png';
-import EHU from '../../assets/Ehu_logo.png';
 import FacebookIcon from '../../assets/facebook-icon.png';
 import YoutubeIcon from '../../assets/youtube.png';
 import InstagramIcon from '../../assets/instagram.png';
 import TwitterIcon from '../../assets/twitter.png';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import Stepper from '../Stepper/stepper';
 
 const Contact = () => {
     const { t } = useTranslation();
@@ -37,10 +36,7 @@ const Contact = () => {
                     {t('description_chronology')}<br/>
                     {t('description_chronology2')}
                 </p>
-                <div className='clientsImgs'>
-                    <img src={EHU} alt='Client' className='clientsImg'></img>
-                    <img src={Zucchetti} alt='Client' className='clientsImg'></img>
-                </div>
+                <Stepper/>
             </div>
             <div id='contact'>
                 <h1 className='contactPageTitle'>{t('contact_me')}</h1>
