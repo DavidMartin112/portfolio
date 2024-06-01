@@ -58,9 +58,35 @@
 }
 
 .line .duration:first-child {
-    left: -210px; /* Adjust based on your design */
+    left: -210px; /* Adjust based design */
 }
 
 .line .duration:last-child {
-    right: -210px; /* Adjust based on your design */
+    right: -210px; /* Adjust based on design */
+}
+
+@media screen and (max-width: 720px) {
+    .stepper{
+        flex-direction: column;
+    }
+
+    .line hr {
+        height: 150px;
+        width: 0px;
+        border: none;
+        border-right: var(--secondary-color) 10px solid;
+        margin: 0px;
+    }
+
+    .line .duration:first-child {
+        top: -40px;
+        left: -30px;
+        min-width: 70px;
+    }
+    
+    .line .duration:last-child {
+        top: 280px;
+        right: -30px;
+        min-width: 70px;
+    }
 }
