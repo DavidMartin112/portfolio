@@ -16,12 +16,24 @@ const Works = () => {
             <h2 className='worksTitle'>{t('my')} {t('portfolio')}</h2>
             <span className='worksDesc'>{t('works_desc')}</span>
             <div className='worksImgs'>
-                <img src={Portfolio1} alt='' className='worksImg'></img>
-                <img src={Portfolio2} alt='' className='worksImg'></img>
-                <img src={Portfolio3} alt='' className='worksImg'></img>
-                <img src={Portfolio4} alt='' className='worksImg'></img>
-                <img src={Portfolio5} alt='' className='worksImg'></img>
-                <img src={Portfolio6} alt='' className='worksImg'></img>
+                <a href='https://github.com/DavidMartin112/portfolio' target='_blank' rel='noopener noreferrer'>
+                    <img src={Portfolio1} alt='' className='worksImg' />
+                </a>
+                <a href='https://github.com/DavidMartin112/IvoryBot' target='_blank' rel='noopener noreferrer'>
+                    <img src={Portfolio2} alt='' className='worksImg' />
+                </a>
+                <a href='https://www.zucchetti.es/solmicro-digital-hub/erp-ley-antifraude-crea-y-crece.html' target='_blank' rel='noopener noreferrer'>
+                    <img src={Portfolio3} alt='' className='worksImg' />
+                </a>
+                <a href='https://www.solmicro.com/crm-programa-de-gestion-de-clientes' target='_blank' rel='noopener noreferrer'>
+                    <img src={Portfolio4} alt='' className='worksImg' />
+                </a>
+                {/* <a href='GESTOR FINANCIERO' target='_blank' rel='noopener noreferrer'> */}
+                    <img src={Portfolio5} alt='' className='worksImg' />
+                {/* </a> */}
+                {/* <a href='AI IMAGE SMTHNG' target='_blank' rel='noopener noreferrer'> */}
+                    <img src={Portfolio6} alt='' className='worksImg' />
+                {/* </a> */}
             </div>
             <a href='https://github.com/DavidMartin112' target='_blank' rel='noopener noreferrer'>
                 <button className='worksBtn'>{t('see_more')}</button>
