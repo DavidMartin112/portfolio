@@ -65,6 +65,29 @@
     right: -210px; /* Adjust based on design */
 }
 
+.dialogTitle {
+    font-size: 2rem; /* Large title size */
+    font-weight: bold; /* Emphasize the title */
+    color: var(--text-color); /* Match the primary color */
+    margin: auto auto 2rem auto;
+    text-align: center; /* Center the title */
+}
+
+.dialogText {
+    font-size: 1.2rem; /* Make the text larger for readability */
+    line-height: 1.6; /* Improve readability with line spacing */
+    color: var(--secondary-color); /* Use the secondary color for contrast */
+    margin: auto 10rem 1.5rem 10rem;
+    text-align: justify; /* Justify text for a cleaner look */
+}
+
+.dialogImg {
+    object-fit: cover;
+    width: 20rem;
+    height: auto;
+    margin: 2rem;
+}
+
 @media screen and (max-width: 720px) {
     .stepper{
         flex-direction: column;
@@ -88,5 +111,28 @@
         top: 280px;
         right: -30px;
         min-width: 70px;
+    }
+
+    .dialogTitle {
+        font-size: 1.2rem; /* Large title size */
+        font-weight: bold; /* Emphasize the title */
+        color: var(--text-color); /* Match the primary color */
+        margin: auto auto 2rem auto;
+        text-align: center; /* Center the title */
+    }
+    
+    .dialogText {
+        font-size: 1rem; /* Make the text larger for readability */
+        line-height: 1.6; /* Improve readability with line spacing */
+        color: var(--secondary-color); /* Use the secondary color for contrast */
+        margin: auto 1rem 1.5rem 1rem;
+        text-align: justify; /* Justify text for a cleaner look */
+    }
+    
+    .dialogImg {
+        object-fit: cover;
+        width: 10rem;
+        height: auto;
+        margin: 2rem;
     }
 }

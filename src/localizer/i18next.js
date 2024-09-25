@@ -16,7 +16,7 @@ i18n
           "home": "Home",
           "about": "About",
           "portfolio": "Portfolio",
-          "clients": "Clients",
+          "chronology": "Chronology",
           "contact": "Contact",
           "contact_me": "Contact Me",
           "hello": "Hello",
@@ -47,7 +47,11 @@ i18n
           "skill3_desc": "Providing expert advice on technology solutions, managing projects from inception to completion, and ensuring alignment with client requirements and business goals.",
           "error_empty_fields": "Please fill out all fields",
           "success_email": "Your message has been sent successfully. I will get back to you soon.",
-          "error_send_email": "Not able to send email... Try again later!"
+          "error_send_email": "Not able to send email... Try again later!",
+          "title_ehu": "University of the Basque Country",
+          "title_zucchetti": "Zucchetti Spain",
+          "text_ehu": "I completed my Software Engineering degree at Euskal Herriko Unibertsitatea (EHU). \nThe university is known for its comprehensive educational programs and research opportunities. \nDuring my studies, I gained a strong foundation in programming, software development, and problem-solving, \nwhich has significantly shaped my professional skills. The environment also encouraged innovation \nand collaboration, which has been invaluable in my career.",
+          "text_zucchetti": "Zucchetti Spain is a leading software company specializing in ERP and business management solutions. \nI worked with them on various innovative projects, focusing on software development and integration \nsolutions for clients. The experience allowed me to apply and expand my skills in a professional setting, \ncollaborating with a highly skilled team. Zucchetti is well-regarded for its cutting-edge technology \nsolutions and has a strong presence in the Spanish market."
       }
       },
       es: {
@@ -55,7 +59,7 @@ i18n
           "home": "Inicio",
           "about": "Sobre Mi",
           "portfolio": "Portfolio",
-          "clients": "Clientes",
+          "chronology": "Cronología",
           "contact": "Contactar",
           "contact_me": "Contactame",
           "hello": "Hola",
@@ -86,7 +90,11 @@ i18n
           "skill3_desc": "Proporcionar asesoramiento experto sobre soluciones tecnológicas, gestionar proyectos desde su inicio hasta su finalización y garantizar la alineación con los requisitos del cliente y los objetivos empresariales.",
           "error_empty_fields": "Por favor complete todos los campos",
           "success_email": "Su mensaje ha sido enviado con éxito. Me pondré en contacto contigo pronto.",
-          "error_send_email": "No se puede enviar el correo electrónico... ¡Inténtalo de nuevo más tarde!"
+          "error_send_email": "No se puede enviar el correo electrónico... ¡Inténtalo de nuevo más tarde!",
+          "title_ehu": "Euskal Herriko Unibertsitatea / Universidad del País Vasco",
+          "title_zucchetti": "Zucchetti Spain",
+          "text_ehu": "Completé mi grado en Ingeniería de Software en Euskal Herriko Unibertsitatea (EHU). \nLa universidad es conocida por sus completos programas educativos y oportunidades de investigación. \nDurante mis estudios, adquirí una sólida base en programación, desarrollo de software y resolución de problemas, \nlo que ha dado forma significativa a mis habilidades profesionales. El entorno también fomentaba la innovación \ny la colaboración, lo que ha sido invaluable en mi carrera.",
+          "text_zucchetti": "Zucchetti Spain es una empresa de software líder especializada en soluciones ERP y de gestión empresarial. \nTrabajé con ellos en varios proyectos innovadores, enfocándome en el desarrollo de software e integración \nde soluciones para los clientes. La experiencia me permitió aplicar y ampliar mis habilidades en un entorno profesional, \ncolaborando con un equipo altamente cualificado. Zucchetti es muy reconocida por sus soluciones tecnológicas \nde vanguardia y tiene una fuerte presencia en el mercado español."
         }
       }
     }

@@ -3,8 +3,11 @@ import './stepper.css';
 import Zucchetti from '../../assets/zucchetti.png';
 import EHU from '../../assets/Ehu_logo.png';
 import Dialog from '../Dialog/dialog';
+import { useTranslation } from 'react-i18next';
+
 
 const Stepper = () => {
+    const { t } = useTranslation();
     const [isEHUDialogOpen, setIsEHUDialogOpen] = useState(false);
     const openEHUDialog = () => { setIsEHUDialogOpen(true); };
     const handleCloseEHUDialog = () => { setIsEHUDialogOpen(false); };
@@ -20,8 +23,9 @@ const Stepper = () => {
                 <img src={EHU} alt='Client' className='clientsImg'></img>
                 <span className='year'>2024</span>
                 <Dialog isOpen={isEHUDialogOpen} onClose={handleCloseEHUDialog}>
-                    <h2>Info sobre la EHU</h2>
-                    <p>You can put any content here.</p>
+                    <h2 className='dialogTitle'>{t('title_ehu')}</h2>
+                    <p className='dialogText'>{t('text_ehu')}</p>
+                    <img src={EHU} alt='Client' className='dialogImg'></img>
                 </Dialog>
             </div>
             <div className='line'>
@@ -34,8 +38,9 @@ const Stepper = () => {
                 <img src={Zucchetti} alt='Client' className='clientsImg'></img>
                 <span className='year'>20XX</span>
                 <Dialog isOpen={isDialogOpen} onClose={handleCloseDialog}>
-                    <h2>Info sobre Zucchetti</h2>
-                    <p>You can put any content here.</p>
+                    <h2 className='dialogTitle'>{t('title_zucchetti')}</h2>
+                    <p className='dialogText'>{t('text_zucchetti')}</p>
+                    <img src={Zucchetti} alt='Client' className='dialogImg'></img>
                 </Dialog>
             </div>
         </div>
