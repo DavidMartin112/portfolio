@@ -23,7 +23,9 @@ const Works = () => {
                 <img src={Portfolio5} alt='' className='worksImg'></img>
                 <img src={Portfolio6} alt='' className='worksImg'></img>
             </div>
-            <button className='worksBtn'>{t('see_more')}</button>
+            <a href='https://github.com/DavidMartin112' target='_blank' rel='noopener noreferrer'>
+                <button className='worksBtn'>{t('see_more')}</button>
+            </a>
         </section>
     );
 };

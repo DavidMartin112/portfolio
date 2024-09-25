@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './contact.css';
-import FacebookIcon from '../../assets/facebook-icon.png';
-import YoutubeIcon from '../../assets/youtube.png';
+import Github from '../../assets/github-icon.png';
+import Linkedin from '../../assets/linkedin.png';
 import InstagramIcon from '../../assets/instagram.png';
 import TwitterIcon from '../../assets/twitter.png';
 import emailjs from '@emailjs/browser';
@@ -47,10 +47,18 @@ const Contact = () => {
                     <textarea className='msg' name='message' rows='5' placeholder={t('your_message')}></textarea>
                     <button type='submit' className='submit' value='Send'>{t('submit')}</button>
                     <div className='links'>
-                        <img src={FacebookIcon} alt='Facebook' className='link'></img>
-                        <img src={TwitterIcon} alt='Twitter' className='link'></img>
-                        <img src={YoutubeIcon} alt='Youtube' className='link'></img>
-                        <img src={InstagramIcon} alt='Instagram' className='link'></img>
+                        <a href='https://github.com/DavidMartin112' target='_blank' rel='noopener noreferrer'>
+                            <img src={Github} alt='Github' className='link'></img>
+                        </a>
+                        <a href='https://x.com/dondavid2002' target='_blank' rel='noopener noreferrer'>
+                            <img src={TwitterIcon} alt='Twitter' className='link'></img>
+                        </a>
+                        <a href='https://www.linkedin.com/in/david-mart%C3%ADn-moro-2366b2252/' target='_blank' rel='noopener noreferrer'>
+                            <img src={Linkedin} alt='Linkedin' className='link'></img>
+                        </a>
+                        <a href='https://www.instagram.com/daviidmar112/' target='_blank' rel='noopener noreferrer'>
+                            <img src={InstagramIcon} alt='Instagram' className='link'></img>
+                        </a>
                     </div>
                 </form>
             </div>
