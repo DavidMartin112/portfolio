@@ -122,8 +122,8 @@
     }
     
     .dialogText {
-        font-size: 1rem; /* Make the text larger for readability */
-        line-height: 1.6; /* Improve readability with line spacing */
+        font-size: 0.8rem; /* Make the text larger for readability */
+        line-height: 1.5; /* Improve readability with line spacing */
         color: var(--secondary-color); /* Use the secondary color for contrast */
         margin: auto 1rem 1.5rem 1rem;
         text-align: justify; /* Justify text for a cleaner look */
@@ -131,7 +131,7 @@
     
     .dialogImg {
         object-fit: cover;
-        width: 10rem;
+        width: 9rem;
         height: auto;
         margin: 2rem;
     }
