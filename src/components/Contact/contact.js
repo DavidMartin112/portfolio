@@ -53,7 +53,7 @@ const Contact = () => {
                         <a href='https://x.com/dondavid2002' target='_blank' rel='noopener noreferrer'>
                             <img src={TwitterIcon} alt='Twitter' className='link'></img>
                         </a>
-                        <a href='https://www.linkedin.com/in/david-mart%C3%ADn-moro-2366b2252/' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://www.linkedin.com/in/david-mart%C3%ADn-moro/' target='_blank' rel='noopener noreferrer'>
                             <img src={Linkedin} alt='Linkedin' className='link'></img>
                         </a>
                         <a href='https://www.instagram.com/daviidmar112/' target='_blank' rel='noopener noreferrer'>

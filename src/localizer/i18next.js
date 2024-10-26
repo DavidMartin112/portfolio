@@ -51,7 +51,9 @@ i18n
           "title_ehu": "University of the Basque Country",
           "title_zucchetti": "Zucchetti Spain",
           "text_ehu": "I completed my Software Engineering degree at Euskal Herriko Unibertsitatea (EHU). \nThe university is known for its comprehensive educational programs and research opportunities. \nDuring my studies, I gained a strong foundation in programming, software development, and problem-solving, \nwhich has significantly shaped my professional skills. The environment also encouraged innovation \nand collaboration, which has been invaluable in my career.",
-          "text_zucchetti": "Zucchetti Spain is a leading software company specializing in ERP and business management solutions. \nI worked with them on various innovative projects, focusing on software development and integration \nsolutions for clients. The experience allowed me to apply and expand my skills in a professional setting, \ncollaborating with a highly skilled team. Zucchetti is well-regarded for its cutting-edge technology \nsolutions and has a strong presence in the Spanish market."
+          "text_zucchetti": "Zucchetti Spain is a leading software company specializing in ERP and business management solutions. \nI worked with them on various innovative projects, focusing on software development and integration \nsolutions for clients. The experience allowed me to apply and expand my skills in a professional setting, \ncollaborating with a highly skilled team. Zucchetti is well-regarded for its cutting-edge technology \nsolutions and has a strong presence in the Spanish market.",
+          "years": "years",
+          "years": "year"
       }
       },
       es: {
@@ -94,7 +96,9 @@ i18n
           "title_ehu": "Euskal Herriko Unibertsitatea / Universidad del País Vasco",
           "title_zucchetti": "Zucchetti Spain",
           "text_ehu": "Completé mi grado en Ingeniería de Software en Euskal Herriko Unibertsitatea (EHU). \nLa universidad es conocida por sus completos programas educativos y oportunidades de investigación. \nDurante mis estudios, adquirí una sólida base en programación, desarrollo de software y resolución de problemas, \nlo que ha dado forma significativa a mis habilidades profesionales. El entorno también fomentaba la innovación \ny la colaboración, lo que ha sido invaluable en mi carrera.",
-          "text_zucchetti": "Zucchetti Spain es una empresa de software líder especializada en soluciones ERP y de gestión empresarial. \nTrabajé con ellos en varios proyectos innovadores, enfocándome en el desarrollo de software e integración \nde soluciones para los clientes. La experiencia me permitió aplicar y ampliar mis habilidades en un entorno profesional, \ncolaborando con un equipo altamente cualificado. Zucchetti es muy reconocida por sus soluciones tecnológicas \nde vanguardia y tiene una fuerte presencia en el mercado español."
+          "text_zucchetti": "Zucchetti Spain es una empresa de software líder especializada en soluciones ERP y de gestión empresarial. \nTrabajé con ellos en varios proyectos innovadores, enfocándome en el desarrollo de software e integración \nde soluciones para los clientes. La experiencia me permitió aplicar y ampliar mis habilidades en un entorno profesional, \ncolaborando con un equipo altamente cualificado. Zucchetti es muy reconocida por sus soluciones tecnológicas \nde vanguardia y tiene una fuerte presencia en el mercado español.",
+          "years": "años",
+          "year": "año",
         }
       }
     }

@@ -29,9 +29,9 @@ const Stepper = () => {
                 </Dialog>
             </div>
             <div className='line'>
-                <span className='duration'>4 years</span>
+                <span className='duration'>4 {t('years')}</span>
                 <hr />
-                <span className='duration'>1 year</span>
+                <span className='duration'>1 {t('year')}</span>
             </div>
             <div className='step' onClick={openDialog}>
                 <span className='year'>2023</span>
