@@ -1,12 +1,27 @@
 #intro {
     height: calc(100vh - 5rem);
     width: 100vw;
-    max-width: 80rem;
+    max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     top: 75px;
     margin-bottom: 50px;
+}
+
+#intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/donosti.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: 0.5;
 }
 
 .bg {
